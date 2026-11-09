@@ -62,9 +62,9 @@ p{margin:0}
 .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
 
 /* pierwszy ekran: tekst + wiatraczek z czterech zdjęć jak łopatki logo */
-.hero{display:grid;grid-template-columns:minmax(0,40fr) minmax(0,60fr);height:calc(100svh - var(--hh));min-height:540px;max-height:1100px}
+.hero{display:grid;grid-template-columns:calc(max(var(--gut),(100vw - var(--wrap))/2 + var(--gut)) + 540px) minmax(0,1fr);height:calc(100svh - var(--hh));min-height:540px;max-height:1100px}
 .hero-txt{display:flex;flex-direction:column;justify-content:center;padding:40px 48px 40px max(var(--gut),calc((100vw - var(--wrap))/2 + var(--gut)))}
-.hero h1{font-weight:700;font-size:clamp(44px,4.1vw,76px);line-height:1}
+.hero h1{font-weight:700;font-size:clamp(44px,3.6vw,66px);line-height:1}
 .hero-lead{margin-top:22px;font-size:clamp(17px,1.35vw,21px);color:var(--szary);max-width:34em}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 
@@ -76,7 +76,7 @@ p{margin:0}
 .lp-k{grid-column:2/4;grid-row:3;box-shadow:inset 0 -7px 0 var(--k)}
 .lp-m{grid-column:1;grid-row:2/4;box-shadow:inset 7px 0 0 var(--m)}
 .lp::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inherit}
-.lp-y img{object-position:40% 50%}
+.lp-y img{object-position:22% 50%}
 .lp-c img{object-position:50% 30%}
 .lp-k img{object-position:50% 30%}
 .lp-m img{object-position:55% 40%}
